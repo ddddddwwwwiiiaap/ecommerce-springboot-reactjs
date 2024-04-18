@@ -5,7 +5,6 @@ import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import org.springframework.web.client.HttpClientErrorException.BadRequest;
 
 import com.example.ecommerce.entity.Produk;
 import com.example.ecommerce.exception.BadRequestExeption;
