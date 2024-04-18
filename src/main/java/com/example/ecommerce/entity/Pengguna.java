@@ -18,5 +18,5 @@ public class Pengguna implements Serializable{
     private String email;
     private String hp;
     private String roles;
-    private String isAktif;
+    private Boolean isAktif;
 }
