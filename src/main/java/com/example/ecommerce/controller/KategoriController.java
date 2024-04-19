@@ -34,6 +34,7 @@ public class KategoriController {
 
     @GetMapping("/kategoris/{id}")
     // PathVariable anotation digunakan untuk mengambil data dari url
+    // kemudian data tersebut akan disimpan ke dalam variabel id
     public Kategori findById(@PathVariable("id") String id){
         return kategoriService.findById(id);
     }
