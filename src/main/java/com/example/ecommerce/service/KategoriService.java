@@ -9,9 +9,12 @@ import org.springframework.stereotype.Service;
 import com.example.ecommerce.entity.Kategori;
 import com.example.ecommerce.repository.KategoriRepository;
 
+// Service annotation digunakan untuk menandai kelas sebagai service
 @Service
 public class KategoriService {
 
+    // Autowired adalah anotation yang digunakan untuk melakukan dependency injection,
+    // maksudnya adalah memasukkan object dari kelas lain ke dalam kelas yang menggunakan anotation tersebut
     @Autowired
     private KategoriRepository kategoriRepository;
 

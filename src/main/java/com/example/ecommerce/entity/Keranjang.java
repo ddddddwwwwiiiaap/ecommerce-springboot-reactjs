@@ -12,13 +12,18 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import lombok.Data;
 
+// Entity anotasi digunakan untuk menandai bahwa kelas ini adalah entitas yang akan disimpan di database
 @Entity
+// Data anotasi digunakan untuk membuat getter, setter, equals, hashcode, dan toString
 @Data
 public class Keranjang implements Serializable{
     
+    //Id anotasi digunakan untuk menandai bahwa variabel ini adalah primary key
     @Id
     private String id;
+    // JoinColumn anotasi digunakan untuk menandai bahwa variabel ini adalah foreign key
     @JoinColumn
+    // ManyToOne anotasi digunakan untuk menandai bahwa hubungan antara tabel adalah many to one
     @ManyToOne
     private Produk produk;
     @JoinColumn
@@ -27,6 +32,7 @@ public class Keranjang implements Serializable{
     private Double kuantitas;
     private BigDecimal harga;
     private BigDecimal jumlah;
+    // Temporary anotasi digunakan untuk menandai bahwa tipe data yang digunakan adalah tanggal, dan formatnya adalah timestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date waktuPesan;
 }
