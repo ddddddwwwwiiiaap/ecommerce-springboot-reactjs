@@ -53,7 +53,7 @@ public class AuthController {
         pengguna.setEmail(request.getEmail());
         pengguna.setPassword(passwordEncoder.encode(request.getPassword()));
         pengguna.setNama(request.getUsername());
-        pengguna.setRoles("users");
+        pengguna.setRoles("user");
         Pengguna created = penggunaService.create(pengguna);
         return created;
     }
